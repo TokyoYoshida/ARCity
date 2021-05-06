@@ -25,7 +25,7 @@ public class Spawn : MonoBehaviour
         {
             if (raycastManager.Raycast(Input.GetTouch(0).position, hitResults, TrackableType.All))
             {
-                Instantiate(objectPrefab, hitResults[0].pose.position + new Vector3(-80, -3, -380), Quaternion.identity);
+                Instantiate(objectPrefab, hitResults[0].pose.position, Quaternion.identity);
             }
         }
     }
